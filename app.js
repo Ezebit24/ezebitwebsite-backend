@@ -24,7 +24,10 @@ const userRoutes = require('./src/routes/userRoutes');
 
 // API routes
 app.use('/api', userRoutes);
+app.use("/api/test",()=>{
 
+  res.send("hai najas")
+})
 
 
 // Error handling middleware
